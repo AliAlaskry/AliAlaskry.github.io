@@ -76,13 +76,13 @@ window.SiteConfig = {
   // plain CSS color to pin that section exactly. Leave a section out, or clear this
   // whole object, to fall back to backgroundSeed (or the theme's own flat background).
   backgrounds: {
-    hero:         "color-mix(in srgb, var(--accent) 4%, var(--bg))",
-    achievements: "color-mix(in srgb, var(--accent) 7%, var(--bg))",
+    hero:         "color-mix(in srgb, var(--accent) 5%, var(--bg))",
+    achievements: "color-mix(in srgb, var(--accent) 5%, var(--bg))",
     showcase:     "color-mix(in srgb, var(--accent) 5%, var(--bg))",
-    skills:       "color-mix(in srgb, var(--accent) 9%, var(--bg))",
-    experience:   "color-mix(in srgb, var(--accent) 3%, var(--bg))",
-    systems:      "color-mix(in srgb, var(--accent) 8%, var(--bg))",
-    contact:      "color-mix(in srgb, var(--accent) 11%, var(--bg))"
+    skills:       "color-mix(in srgb, var(--accent) 5%, var(--bg))",
+    experience:   "color-mix(in srgb, var(--accent) 5%, var(--bg))",
+    systems:      "color-mix(in srgb, var(--accent) 5%, var(--bg))",
+    contact:      "color-mix(in srgb, var(--accent) 5%, var(--bg))"
   }
 };
 
