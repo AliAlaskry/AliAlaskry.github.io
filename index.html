@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Alaskry — Senior Unity Developer & Technical Lead</title>
+<meta name="description" content="Portfolio of Ali Alaskry, Senior Unity Developer and Technical Lead specializing in mobile, multiplayer, and XR game systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="content/config.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-layer" id="bg-layer" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#hero">Ali Alaskry</a>
+    <nav class="nav__links" aria-label="Section navigation" id="nav-links"></nav>
+    <a class="nav__resume" id="nav-resume" download>Résumé ↓</a>
+  </div>
+</header>
+
+<div class="subnav" id="subnav" hidden>
+  <div class="subnav__inner container">
+    <span class="subnav__label" id="subnav-label"></span>
+    <div class="subnav__list" id="subnav-list"></div>
+  </div>
+</div>
+
+<aside class="sidebar" id="sidebar" hidden>
+  <p class="sidebar__label" id="sidebar-label"></p>
+  <div class="sidebar__list" id="sidebar-list"></div>
+</aside>
+
+<main id="main">
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1 class="hero__title" id="hero-title"></h1>
+      <p class="hero__role" id="hero-role"></p>
+      <p class="hero__pitch" id="hero-pitch"></p>
+      <div class="hero__tags" id="hero-tags"></div>
+      <div class="hero__actions">
+        <button type="button" class="btn btn--primary" id="hero-intro-btn">Who is Ali</button>
+        <a href="assets/resume.pdf" class="btn btn--ghost" id="hero-resume" download>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <h2 class="section__title" id="achievements-heading">Achievements</h2>
+      <p class="section__hint"></p>
+      <div class="achievements__list" id="achievements-list"></div>
+    </div>
+  </section>
+
+  <section id="showcase" class="showcase">
+    <div class="container">
+      <h2 class="section__title" id="showcase-heading">Showcase</h2>
+      <p class="section__hint"></p>
+      <div class="showcase__grid" id="showcase-grid"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section__title" id="skills-heading">What I bring to a team</h2>
+      <p class="section__hint"></p>
+      <div class="skills__controls">
+        <input type="search" class="skills__search" id="skills-search" placeholder="Search a skill…" aria-label="Search skills">
+        <div class="skills__tabs" id="skills-tabs" role="tablist"></div>
+      </div>
+      <div class="skills__panels" id="skills-panels"></div>
+      <div class="skills__results" id="skills-results" hidden></div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section__title" id="experience-heading">Console — work history</h2>
+      <p class="section__hint">Click a line to expand it.</p>
+      <div class="console" id="console-log"></div>
+    </div>
+  </section>
+
+  <section id="systems" class="systems">
+    <div class="container">
+      <h2 class="section__title" id="systems-heading">Playbook</h2>
+      <p class="section__hint"></p>
+      <div class="systems__list" id="systems-list"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section__title" id="contact-heading">Let's talk</h2>
+      <div class="contact__grid" id="contact-grid"></div>
+    </div>
+  </section>
+</main>
+
+<div class="video-modal" id="video-modal" hidden>
+  <div class="video-modal__backdrop" id="video-modal-backdrop"></div>
+  <div class="video-modal__panel" role="dialog" aria-modal="true" aria-label="Introduction video">
+    <button type="button" class="video-modal__close" id="video-modal-close" aria-label="Close">✕</button>
+    <div class="video-modal__media" id="video-modal-media"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close">✕</button>
+    <div class="lightbox__body">
+      <span class="lightbox__eyebrow" id="lightbox-eyebrow"></span>
+      <h3 id="lightbox-title"></h3>
+      <p id="lightbox-description"></p>
+      <div class="lightbox__contribution" id="lightbox-contribution" hidden>
+        <p class="lightbox__block-label">My contribution</p>
+        <ul id="lightbox-contribution-list"></ul>
+      </div>
+      <ol class="lightbox__steps" id="lightbox-steps" hidden></ol>
+      <div class="lightbox__groups" id="lightbox-groups" hidden></div>
+      <div class="lightbox__links" id="lightbox-links" hidden></div>
+    </div>
+  </div>
+</div>
+
+<script src="content/hero.js"></script>
+<script src="content/achievements.js"></script>
+<script src="content/showcase.js"></script>
+<script src="content/skills.js"></script>
+<script src="content/experience.js"></script>
+<script src="content/systems.js"></script>
+<script src="content/contact.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

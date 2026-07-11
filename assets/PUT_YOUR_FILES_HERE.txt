@@ -1,0 +1,8 @@
+Put these files in this folder:
+
+- resume.pdf              → your downloadable résumé (linked from the hero and contact section)
+- img/<project>.png        → showcase screenshots
+- img/<project>.mp4        → showcase clips (short, muted, looping works best)
+
+Once a file exists, open content/showcase.js and swap the matching card's
+media area to point at it (see the comment at the top of that file).
