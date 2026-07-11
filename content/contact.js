@@ -6,11 +6,11 @@
 window.SiteContent = window.SiteContent || {};
 window.SiteContent.contact = {
   heading: "Let's talk",
-  resume: "assets/resume.pdf",
+  resume: "assets/Ali_Alaskry_Senior_Unity_Developer.pdf",
   items: [
     { label: "GitHub", url: "https://github.com/AliAlaskry" },
     { label: "LinkedIn", url: "https://linkedin.com/in/ali-alaskry-91b911211" },
     { label: "Email", url: "mailto:ali.alaskry00@gmail.com" },
-    { label: "Résumé", url: "assets/resume.pdf" }
+    { label: "Résumé", url: "assets/Ali_Alaskry_Senior_Unity_Developer.pdf" }
   ]
 };

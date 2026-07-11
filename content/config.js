@@ -9,7 +9,7 @@ window.SiteConfig = {
   //   "daylight" — light warm paper, terracotta accent
   //   "slate"    — light cool gray-blue, indigo accent (a lighter, more corporate option)
   //   "mono"     — stark black & white, no color anywhere
-  theme: "arcade",
+  theme: "midnight",
 
   // Master on/off switch for all motion on the page (hover lifts, reveal-on-scroll,
   // background fades, pulsing dot, etc). Set to false for a fully static page.
@@ -50,11 +50,11 @@ window.SiteConfig = {
   },
 
   // "grid" or "list"
-  showcaseLayout: "list",
+  showcaseLayout: "grid",
 
   // "horizontal" (swipe/drag-scroll cards, click-and-hold to drag on desktop) or
   // "vertical" (a stacked list of small clickable cards, no dragging needed)
-  achievementsLayout: "vertical",
+  achievementsLayout: "horizontal",
 
   // The résumé button in the top-right of the nav bar
   showResumeButton: true,

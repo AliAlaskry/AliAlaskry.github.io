@@ -108,6 +108,8 @@
     var modal = document.getElementById('video-modal');
     var mediaWrap = document.getElementById('video-modal-media');
     mediaWrap.innerHTML = '';
+    mediaWrap.style.aspectRatio = '16 / 9';
+    mediaWrap.style.background = '#000';
     if (video && video.src) {
       if (video.type === 'youtube') {
         var iframe = document.createElement('iframe');
@@ -116,6 +118,20 @@
         iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
         iframe.setAttribute('allowfullscreen', '');
         mediaWrap.appendChild(iframe);
+      } else if (video.type === 'image') {
+        var img = document.createElement('img');
+        img.src = video.src;
+        img.alt = video.alt || '';
+        img.loading = 'lazy';
+        img.className = 'video-modal__image';
+
+        img.onload = function () {
+            mediaWrap.style.aspectRatio =
+                img.naturalWidth + ' / ' + img.naturalHeight;
+            mediaWrap.style.background = 'transparent';
+        };
+
+        mediaWrap.appendChild(img);
       } else {
         var v = document.createElement('video');
         v.src = video.src;
@@ -123,7 +139,7 @@
         v.autoplay = true;
         v.playsInline = true;
         mediaWrap.appendChild(v);
-      }
+    }
     } else {
       mediaWrap.appendChild(el('p', { class: 'video-modal__placeholder', text: 'Video coming soon.' }));
     }

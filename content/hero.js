@@ -12,9 +12,10 @@ window.SiteContent.hero = {
   // The video that plays when that button is clicked.
   // "type": "video" for a file you host yourself (put it in assets/, e.g. "assets/intro.mp4"),
   //         or "youtube" for a normal YouTube link or video ID.
+  //         or "image" for a normal images.
   // Leave "src" empty until it's ready — the button still works and shows "coming soon".
   introVideo: {
-    type: "video",
-    src: ""
+    type: "image",
+    src: "me.JPEG"
   }
 };
