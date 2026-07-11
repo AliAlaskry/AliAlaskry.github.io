@@ -16,6 +16,6 @@ window.SiteContent.hero = {
   // Leave "src" empty until it's ready — the button still works and shows "coming soon".
   introVideo: {
     type: "image",
-    src: "assets/me.JPEG"
+    src: "assets/me.jpeg"
   }
 };
