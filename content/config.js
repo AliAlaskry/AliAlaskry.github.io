@@ -50,7 +50,7 @@ window.SiteConfig = {
   },
 
   // "grid" or "list"
-  showcaseLayout: "grid",
+  showcaseLayout: "list",
 
   // "horizontal" (swipe/drag-scroll cards, click-and-hold to drag on desktop) or
   // "vertical" (a stacked list of small clickable cards, no dragging needed)
