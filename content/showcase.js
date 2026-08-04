@@ -87,7 +87,7 @@ window.SiteContent.showcase = {
         "Improved frame rate from 20 to 60–75 FPS alongside CPU, GPU, and memory optimization",
         "Applied XR Interaction Toolkit and Addressables for maintainability across the project"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\XR.JPG",
+      thumbnail: "assets\\Showcase\\Thumbnails\\XR.JPEG",
       links: [],
       mediaGroups: [
         { title: "In-Headset Footage", items: [] }
@@ -103,7 +103,7 @@ window.SiteContent.showcase = {
         "Built the real-time game logic and turn/round sync using Socket.IO and native socket calls",
         "Reused the socket architecture to ship a second card game for the same client"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\Tarneeb.JPG",
+      thumbnail: "assets\\Showcase\\Thumbnails\\Tarneeb.JPEG",
       links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] }
