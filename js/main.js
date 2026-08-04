@@ -265,7 +265,7 @@
       media.appendChild(el('span', { class: 'showcase-card__view', text: 'View project →' }));
 
       var body = el('div', { class: 'showcase-card__body' });
-      var statusLabel = p.status === 'building' ? 'In progress' : 'Case study';
+      var statusLabel = p.status;
       body.appendChild(el('span', { class: 'showcase-card__status showcase-card__status--' + p.status, text: statusLabel }));
       body.appendChild(el('h3', { class: 'showcase-card__title', text: p.title }));
       body.appendChild(el('p', { class: 'showcase-card__stack', text: p.stack }));

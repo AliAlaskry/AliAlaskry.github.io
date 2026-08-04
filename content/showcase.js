@@ -16,83 +16,113 @@ window.SiteContent = window.SiteContent || {};
 window.SiteContent.showcase = {
   heading: "Showcase",
   hint: "Click a project to see the full story.",
-  items: [
+  items:[
     {
-      status: "building",
-      title: "Vertical Slice — Multiplayer Combat Arena",
-      stack: "Photon Fusion 2 · VContainer · engine-agnostic core",
-      note: "Flagship project, in progress.",
-      description: "A small multiplayer vertical slice: pick up and equip weapons, fight in a shared arena, with combat and inventory synced across 2-4 players. Built on an engine-agnostic, unit-tested core with a VContainer composition root and an event bus decoupling gameplay from UI.",
-      contribution: [
-        "Designed the architecture: engine-agnostic core, VContainer composition root, and event bus",
-        "Built the gameplay systems — inventory, equipment, and combat resolution",
-        "Implemented the Photon Fusion 2 networking layer end to end"
-      ],
-      thumbnail: "",
-      links: [
-        { label: "Play", url: "" },
-        { label: "Code", url: "" }
-      ],
-      mediaGroups: [
-        { title: "Gameplay", items: [] },
-        { title: "Technical", items: [] }
-      ]
-    },
-    {
-      status: "case-note",
+      status: "paused",
       title: "Historical Mobile Game",
-      stack: "Android · iOS · team leadership",
-      note: "Lead role: 50+ asset city-level integration, 15+ screen UI rebuild, 30→60+ FPS pass.",
-      description: "Led Unity production for a historical mobile game, scaling the team from 5 to 10, rebuilding UI/UX across 15+ screens, and directing a refactor of 8+ legacy systems into modular architecture.",
+      stack: "Unity · C# · Assembly Definitions · Agile/Scrum",
+      note: "In production at RAR IT as Lead Developer. Not yet publicly shipped — production paused for reasons unrelated to the engineering work.",
+      description: "Leading Unity production for a historical mobile game (Android/iOS): scaled the team from 5 to 11, took frame rate from ~30 to 60+ FPS, and rebuilt the UI/UX across 15+ screens while directing a refactor of 8+ legacy systems into modular architecture.",
       contribution: [
-        "Set technical direction and architecture standards for the team",
-        "Ran sprint planning and day-to-day production coordination",
-        "Contributed hands-on C# development alongside leading the team"
+        "Scaled and stabilized the production team from 5 to 11 members",
+        "Designed the Agile production workflow: sprints, task review, blocker reporting, stakeholder status reporting",
+        "Directed refactoring of 8+ legacy systems into modular architecture using assembly definitions",
+        "Improved frame rate ~30 → 60+ FPS and cut load/startup time ~15%",
+        "Built an internal desktop tool aggregating manager and peer review with performance metrics into per-employee reports"
       ],
-      thumbnail: "",
-      links: [
-        { label: "Play", url: "" }
-      ],
+      thumbnail: "assets\\Showcase\\Thumbnails\\Rad3Eledwan.png",
+      links: [],
       mediaGroups: [
-        { title: "Gameplay", items: [] },
-        { title: "Dashboard", items: [] }
+        { title: "Process & Leadership", items: [] }
       ]
     },
     {
-      status: "case-note",
+      status: "shipped",
       title: "Educational Multiplayer Battle Royale",
-      stack: "Modular architecture · NavMesh AI · anti-cheat",
-      note: "Co-founded product.",
-      description: "Co-developed an educational multiplayer battle royale game: scalable modular architecture, NavMesh-based AI, anti-cheat logic, and a ~60% load-time reduction.",
+      stack: "Photon · Unity Assembly Definitions · AWS · UnityWebRequest",
+      note: "Co-founded and built as Lead Developer at Lessonera.",
+      description: "A student-focused multiplayer battle royale with a full character loop — combat, equipment, inventory, and store — built on a codebase migrated from monolithic to six independent, tested assembly-definition modules (Localization, PlayerCore, Sync, Network, UIView, WebView).",
       contribution: [
-        "Co-founded the project and helped shape its direction",
-        "Wrote gameplay programming and the core architecture",
-        "Handled performance optimization and localization support"
+        "Migrated the codebase into modular, independently testable assemblies",
+        "Cut cold-start load time from 24–26s to 4–6s and reduced build size ~20%",
+        "Built the battle-royale character systems: combat, equipment, inventory, store",
+        "Integrated RESTful APIs via UnityWebRequest and built a WebView system for an external education platform",
+        "Worked across level design and UI development during the project's lifetime"
       ],
-      thumbnail: "",
-      links: [
-        { label: "Play", url: "" }
-      ],
+      thumbnail: "assets\\Showcase\\Thumbnails\\Lessonera.png",
+      links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] },
-        { title: "Technical", items: [] }
+        { title: "Architecture", items: [] }
       ]
     },
     {
-      status: "case-note",
-      title: "Online Multiplayer Card Game",
-      stack: "Photon PUN 2 · PlayFab",
-      note: "Delivered a client project in ~3 months.",
-      description: "Built an online multiplayer card game with Photon PUN 2 and PlayFab, including rule-based AI bots and full backend integration.",
+      status: "shipped",
+      title: "Multiplayer Card & Board Platform",
+      stack: "Photon · PlayFab · C#",
+      note: "Client freelance project — three games, one shared platform. Currently facing listing issues on Google Play; not live in the store at the moment.",
+      description: "A platform of three real-time multiplayer games (closed backgammon, backgammon, and 31) built for a freelance client, with a full social and retention layer: text and voice chat, friends system, daily rewards, rematch requests, lifetime player stats, and a rule-based AI that fills in for offline or idle players. Ludo and Domino were also brought to ~90% completion on the same platform.",
       contribution: [
-        "Delivered the project end to end as the sole freelance developer",
-        "Built the UI/UX from scratch",
-        "Handled backend integration with Photon PUN 2 and PlayFab"
+        "Built session-recovery: auto-reconnect and rejoin-last-room logic backed by PlayFab-stored state",
+        "Engineered a fully responsive UI system with zero element overlap across screen sizes",
+        "Implemented in-match text chat, voice chat, quick-chat, and a rule-based fallback AI bot",
+        "Built the registration/auth, daily-rewards, and IAP + multi-network ad integration",
+        "Collaborated with a second programmer over GitHub across a two-month build phase"
       ],
-      thumbnail: "",
-      links: [
-        { label: "Play", url: "" }
+      thumbnail: "assets\\Showcase\\Thumbnails\\Tawltna.png",
+      links: [],
+      mediaGroups: [
+        { title: "Gameplay", items: [] },
+        { title: "Responsive UI Demo", items: [] }
+      ]
+    },
+    {
+      status: "shipped",
+      title: "Meta Quest XR Experiences",
+      stack: "Unity XR Interaction Toolkit · Addressables · Photon",
+      note: "Built for therapeutic and educational use cases.",
+      description: "VR experiences for Meta Quest built for therapeutic, educational, and behavioral-improvement goals — project structure, gameplay systems, and performance tuning built from the ground up.",
+      contribution: [
+        "Built the project from the ground up: structure, gameplay systems, debugging workflow",
+        "Improved frame rate from 20 to 60–75 FPS alongside CPU, GPU, and memory optimization",
+        "Applied XR Interaction Toolkit and Addressables for maintainability across the project"
       ],
+      thumbnail: "assets\\Showcase\\Thumbnails\\XR.JPG",
+      links: [],
+      mediaGroups: [
+        { title: "In-Headset Footage", items: [] }
+      ]
+    },
+    {
+      status: "status unclear",
+      title: "Tarneeb — Real-Time Card Game",
+      stack: "Socket.IO · native socket calls · C#",
+      note: "Built as a webview game inside a Saudi client's app. Shipping status on the client's side was never confirmed.",
+      description: "A real-time Tarneeb implementation built for a Saudi client, delivered as a webview experience inside their app. The same socket architecture was reused to build a second card game for the same client.",
+      contribution: [
+        "Built the real-time game logic and turn/round sync using Socket.IO and native socket calls",
+        "Reused the socket architecture to ship a second card game for the same client"
+      ],
+      thumbnail: "assets\\Showcase\\Thumbnails\\Tarneeb.JPG",
+      links: [],
+      mediaGroups: [
+        { title: "Gameplay", items: [] }
+      ]
+    },
+    {
+      status: "shipped",
+      title: "Real-Time Poker Platform",
+      stack: "Photon · PlayFab · C#",
+      note: "Client freelance project. Currently facing listing issues on Google Play; not live in the store at the moment.",
+      description: "A multiplayer poker game built for a freelance client with custom rule variants layered on standard poker: provably fair card distribution, and special per-player abilities like swapping cards post-deal or doubling points on a win.",
+      contribution: [
+        "Implemented fair card-dealing logic and the custom special-ability rule set",
+        "Built the multiplayer session layer on Photon with PlayFab as backend",
+        "Integrated AdMob monetization",
+        "Worked with a 2D artist to bring vector art into the game via Adobe Illustrator asset extraction"
+      ],
+      thumbnail: "assets\\Showcase\\Thumbnails\\KingOfGames.png",
+      links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] }
       ]

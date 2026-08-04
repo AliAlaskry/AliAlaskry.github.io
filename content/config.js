@@ -9,7 +9,7 @@ window.SiteConfig = {
   //   "daylight" — light warm paper, terracotta accent
   //   "slate"    — light cool gray-blue, indigo accent (a lighter, more corporate option)
   //   "mono"     — stark black & white, no color anywhere
-  theme: "midnight",
+  theme: "arcade",
 
   // Master on/off switch for all motion on the page (hover lifts, reveal-on-scroll,
   // background fades, pulsing dot, etc). Set to false for a fully static page.

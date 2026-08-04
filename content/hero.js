@@ -1,9 +1,9 @@
 window.SiteContent = window.SiteContent || {};
 window.SiteContent.hero = {
-  title: "Ali Alaskry",
+  title: "Ali Ahmed Alaskry",
   role: "Senior Unity Developer & Technical Lead",
-  pitch: "I build multiplayer game systems that still make sense when the team — and the codebase — triples in size.",
-  tags: ["Mobile", "Multiplayer", "XR", "Architecture", "Performance"],
+  pitch: "I build and lead Unity systems for mobile, multiplayer, and XR — from solo freelance builds to running a 11-person production team. Architecture that survives contact with a growing team, not just a demo.",
+  tags: ["Unity", "Multiplayer", "Mobile Optimiztion", "XR/VR", "Architecture", "Technical Leadership"],
 
   // Text on the hero button that opens the intro video. Change it to whatever you like —
   // "Who is Ali", "Introduction", "Meet Ali", etc.
@@ -15,7 +15,7 @@ window.SiteContent.hero = {
   //         or "image" for a normal images.
   // Leave "src" empty until it's ready — the button still works and shows "coming soon".
   introVideo: {
-    type: "image",
-    src: "assets/me.jpeg"
+    type: "",
+    src: ""
   }
 };

@@ -16,30 +16,30 @@ window.SiteContent.systems = {
       ]
     },
     {
-      id: "large-systems",
-      title: "How I structure large systems",
+      id: "expected-failure",
+      title: "Expected failures aren't exceptions",
       steps: [
-        "Gameplay rules are written outside the engine, in plain, framework-free code.",
-        "That core is unit-tested on its own, before a single MonoBehaviour touches it.",
-        "Engine code stays a thin adapter — translating results into visuals, animations, and effects."
+        "A full inventory slot or a missing item isn't a bug — it's a normal outcome the code should handle explicitly.",
+        "I return typed result objects instead of throwing, so callers deal with the case instead of catching around it.",
+        "Exceptions stay reserved for things that actually shouldn't happen — that keeps them meaningful when they do fire."
       ]
     },
     {
-      id: "leading-teams",
-      title: "How I lead teams",
+      id: "profile-first",
+      title: "I profile before I optimize",
       steps: [
-        "Start with a sprint cadence everyone can actually keep, not the one that looks best on paper.",
-        "Make blockers visible early — a hidden blocker costs more the longer it hides.",
-        "Review in public: task status, dependencies, and asset pipeline are documentation, not tribal knowledge."
+        "Every performance pass I've shipped — 30→60 FPS, 24s→4s load time, 20→75 FPS in VR — started with a profiler, not a guess.",
+        "Assumed bottlenecks are wrong often enough that skipping this step wastes more time than it saves.",
+        "I re-test on target hardware after each change, because editor performance and device performance lie to each other."
       ]
     },
     {
-      id: "handling-failure",
-      title: "How I handle failure",
+      id: "report-up",
+      title: "Reporting up is a design problem, not a status update",
       steps: [
-        "A full inventory slot or a missing item is an expected outcome, not an exception.",
-        "Systems return a result the caller can react to, instead of throwing and hoping someone catches it.",
-        "This keeps failure handling visible in the code that calls it, not buried three layers up."
+        "Stakeholders need answers to their actual questions, not a technical log of what happened.",
+        "I structure reports around decisions and risk, and keep implementation detail available on request instead of upfront.",
+        "This is the same instinct as good API design: expose what the caller needs, hide what they don't."
       ]
     }
   ]
