@@ -21,6 +21,19 @@ window.SiteContent.achievements = {
       ]
     },
     {
+      value: "5 → 11",
+      text: "Scaled and stabilized a production team mid-project",
+      context: "RAR IT",
+      description: "Grew the team from 5 to 11 across Unity development, art, level design, game design, and narrative, while designing the workflow that let a bigger team ship without chaos.",
+      steps: [
+        "Audited the existing project to find structural weak points before adding headcount",
+        "Introduced a 2-week Agile sprint cycle with dedicated review and planning days",
+        "Documented workflows per scenario so process didn't live only in one person's head",
+        "Built stakeholder-facing status reporting that answered business questions without technical noise",
+        "Set up GitHub ownership rules and cross-discipline communication standards as the team grew"
+    ]
+    },
+    {
       value: "24–26s → 4–6s",
       text: "Cold-start load time reduction on a live multiplayer game",
       context: "Lessonera",
@@ -35,17 +48,16 @@ window.SiteContent.achievements = {
       ]
     },
     {
-      value: "5 → 11",
-      text: "Scaled and stabilized a production team mid-project",
-      context: "RAR IT",
-      description: "Grew the team from 5 to 11 across Unity development, art, level design, game design, and narrative, while designing the workflow that let a bigger team ship without chaos.",
+      value: "Modular systems",
+      text: "Migrated a monolithic codebase into tested, modular assemblies",
+      context: "Lessonera",
+      description: "Converted the entire game into independent assembly definitions — Localization, PlayerCore, Sync, Network, UIView, WebView and moer — each with its own test and validation coverage.",
       steps: [
-        "Audited the existing project to find structural weak points before adding headcount",
-        "Introduced a 2-week Agile sprint cycle with dedicated review and planning days",
-        "Documented workflows per scenario so process didn't live only in one person's head",
-        "Built stakeholder-facing status reporting that answered business questions without technical noise",
-        "Set up GitHub ownership rules and cross-discipline communication standards as the team grew"
-    ]
+        "Mapped existing coupling between systems to define clean module boundaries",
+        "Extracted each domain into its own assembly definition with an explicit public surface",
+        "Added test and validation units per module to catch regressions at the boundary",
+        "Rebuilt cross-module communication to go through defined interfaces instead of direct references"
+      ]
     },
     {
       value: "20 → 60–75 FPS",
@@ -57,18 +69,6 @@ window.SiteContent.achievements = {
         "Reduced CPU and GPU load through draw call and shader cost reduction",
         "Cut memory footprint to reduce load stutter and improve session stability",
         "Validated comfort-critical frame pacing, since dropped frames in VR directly affect user comfort"
-      ]
-    },
-    {
-      value: "Modular systems",
-      text: "Migrated a monolithic codebase into tested, modular assemblies",
-      context: "Lessonera",
-      description: "Converted the entire game into independent assembly definitions — Localization, PlayerCore, Sync, Network, UIView, WebView and moer — each with its own test and validation coverage.",
-      steps: [
-        "Mapped existing coupling between systems to define clean module boundaries",
-        "Extracted each domain into its own assembly definition with an explicit public surface",
-        "Added test and validation units per module to catch regressions at the boundary",
-        "Rebuilt cross-module communication to go through defined interfaces instead of direct references"
       ]
     },
     {
