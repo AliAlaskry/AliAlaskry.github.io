@@ -440,10 +440,12 @@ button.btn { appearance: none; -webkit-appearance: none; cursor: pointer; font: 
 }
 .showcase-card:hover .showcase-card__view, .showcase-card:focus-visible .showcase-card__view { opacity: 1; }
 .showcase-card__body { padding: 18px 20px; }
+.showcase-card__meta-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
 .showcase-card__status {
   display: inline-block; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
-  padding: 3px 8px; border-radius: 3px; margin-bottom: 10px;
+  padding: 3px 8px; border-radius: 3px; margin-bottom: 0;
 }
+.showcase-card__dates { font-family: var(--mono); font-size: 11px; color: var(--text-muted); white-space: nowrap; }
 .showcase-card__status--building { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
 .showcase-card__status--case-note { background: color-mix(in srgb, var(--text-secondary) 14%, transparent); color: var(--text-secondary); }
 .showcase-card__title { font-size: 16px; margin-bottom: 6px; }

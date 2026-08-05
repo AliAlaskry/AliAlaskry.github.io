@@ -8,23 +8,27 @@ window.SiteContent.skills = {
   groups: [
     {
       category: "Architecture & Code",
-      items: ["Modular Unity architecture", "SOLID principles", "Dependency injection (VContainer)", "Design patterns", "Assembly Definitions", "ScriptableObjects"]
+      items: ["Modular Unity architecture", "SOLID principles", "Dependency injection (VContainer)", "Design patterns", "Assembly Definitions", "ScriptableObjects", "Event bus / pub-sub systems", "Engine-agnostic core logic layers", "Object pooling"]
     },
     {
       category: "Networking & Multiplayer",
-      items: ["Photon Fusion 2", "Photon PUN 2 / Realtime", "Socket.IO", "PlayFab", "REST APIs / UnityWebRequest"]
+      items: ["Photon Fusion 2", "Photon PUN 2 / Realtime", "Socket.IO", "PlayFab", "REST APIs / UnityWebRequest", "Client/host authority design", "Session recovery & reconnect logic", "Anti-cheat logic"]
     },
     {
       category: "Mobile, XR & WebGL",
-      items: ["Android & iOS", "WebGL & PC", "Meta Quest (XR Interaction Toolkit)", "Responsive UI", "Cross-platform deployment"]
+      items: ["Android & iOS", "WebGL & PC", "Meta Quest (XR Interaction Toolkit)", "Responsive UI", "Cross-platform deployment", "Addressables", "WebView integration", "Localization"]
     },
     {
       category: "Optimization & QA",
-      items: ["Unity Profiler", "Memory & frame-rate optimization", "Asset & loading optimization", "Custom debug tooling"]
+      items: ["Unity Profiler", "Memory & frame-rate optimization", "Asset & loading optimization", "Custom debug tooling", "NUnit / Unity Test Framework", "NavMesh AI"]
+    },
+    {
+      category: "Product & Monetization",
+      items: ["Authentication systems", "IAP integration", "AdMob & multi-network ads", "Rule-based AI / bots"]
     },
     {
       category: "Leadership & Tooling",
-      items: ["Agile / Scrum", "Sprint planning", "Stakeholder reporting", "Git, GitHub, Plastic SCM, Perforce"]
+      items: ["Agile / Scrum", "Sprint planning", "Stakeholder reporting", "Code review (SOLID/SRP)", "Cross-discipline team leadership", "Git, GitHub, Plastic SCM, Perforce"]
     }
   ]
 };

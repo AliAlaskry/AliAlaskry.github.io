@@ -1,5 +1,7 @@
 // Each object in "items" is one project card.
 //
+// - "dates": a "From — To" string shown next to the status badge on the card
+//   and in the full-screen view. Leave it out and it's simply not shown.
 // - "thumbnail": path to a single IMAGE (never a video) shown on the card.
 //   Leave it "" until you have one — the card shows a placeholder instead.
 // - "links": an array of { label, url }. Any entry with an empty "url" is
@@ -20,6 +22,7 @@ window.SiteContent.showcase = {
     {
       status: "paused",
       title: "Historical Mobile Game",
+      dates: "Dec 2025 — Present",
       stack: "Unity · C# · Assembly Definitions · Agile/Scrum",
       note: "In production at RAR IT as Lead Developer. Not yet publicly shipped — production paused for reasons unrelated to the engineering work.",
       description: "Leading Unity production for a historical mobile game (Android/iOS): scaled the team from 5 to 11, took frame rate from ~30 to 60+ FPS, and rebuilt the UI/UX across 15+ screens while directing a refactor of 8+ legacy systems into modular architecture.",
@@ -30,7 +33,7 @@ window.SiteContent.showcase = {
         "Improved frame rate ~30 → 60+ FPS and cut load/startup time ~15%",
         "Built an internal desktop tool aggregating manager and peer review with performance metrics into per-employee reports"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\Rad3Eledwan.png",
+      thumbnail: "assets/Showcase/Thumbnails/Rad3Eledwan.png",
       links: [],
       mediaGroups: [
         { title: "Process & Leadership", items: [] }
@@ -39,6 +42,7 @@ window.SiteContent.showcase = {
     {
       status: "shipped",
       title: "Educational Multiplayer Battle Royale",
+      dates: "Jan 2022 — Apr 2025",
       stack: "Photon · Unity Assembly Definitions · AWS · UnityWebRequest",
       note: "Co-founded and built as Lead Developer at Lessonera.",
       description: "A student-focused multiplayer battle royale with a full character loop — combat, equipment, inventory, and store — built on a codebase migrated from monolithic to six independent, tested assembly-definition modules (Localization, PlayerCore, Sync, Network, UIView, WebView).",
@@ -49,7 +53,7 @@ window.SiteContent.showcase = {
         "Integrated RESTful APIs via UnityWebRequest and built a WebView system for an external education platform",
         "Worked across level design and UI development during the project's lifetime"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\Lessonera.png",
+      thumbnail: "assets/Showcase/Thumbnails/Lessonera.png",
       links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] },
@@ -59,6 +63,7 @@ window.SiteContent.showcase = {
     {
       status: "shipped",
       title: "Multiplayer Card & Board Platform",
+      dates: "Jul 2020 — Jan 2022",
       stack: "Photon · PlayFab · C#",
       note: "Client freelance project — three games, one shared platform. Currently facing listing issues on Google Play; not live in the store at the moment.",
       description: "A platform of three real-time multiplayer games (closed backgammon, backgammon, and 31) built for a freelance client, with a full social and retention layer: text and voice chat, friends system, daily rewards, rematch requests, lifetime player stats, and a rule-based AI that fills in for offline or idle players. Ludo and Domino were also brought to ~90% completion on the same platform.",
@@ -69,7 +74,7 @@ window.SiteContent.showcase = {
         "Built the registration/auth, daily-rewards, and IAP + multi-network ad integration",
         "Collaborated with a second programmer over GitHub across a two-month build phase"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\Tawltna.png",
+      thumbnail: "assets/Showcase/Thumbnails/Tawltna.png",
       links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] },
@@ -79,6 +84,7 @@ window.SiteContent.showcase = {
     {
       status: "shipped",
       title: "Meta Quest XR Experiences",
+      dates: "Oct 2025 — Nov 2025",
       stack: "Unity XR Interaction Toolkit · Addressables · Photon",
       note: "Built for therapeutic and educational use cases.",
       description: "VR experiences for Meta Quest built for therapeutic, educational, and behavioral-improvement goals — project structure, gameplay systems, and performance tuning built from the ground up.",
@@ -87,7 +93,7 @@ window.SiteContent.showcase = {
         "Improved frame rate from 20 to 60–75 FPS alongside CPU, GPU, and memory optimization",
         "Applied XR Interaction Toolkit and Addressables for maintainability across the project"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\XR.jpg",
+      thumbnail: "assets/Showcase/Thumbnails/XR.jpg",
       links: [],
       mediaGroups: [
         { title: "In-Headset Footage", items: [] } 
@@ -96,6 +102,7 @@ window.SiteContent.showcase = {
     {
       status: "status unclear",
       title: "Tarneeb — Real-Time Card Game",
+      dates: "Apr 2025 — Aug 2025",
       stack: "Socket.IO · native socket calls · C#",
       note: "Built as a webview game inside a Saudi client's app. Shipping status on the client's side was never confirmed.",
       description: "A real-time Tarneeb implementation built for a Saudi client, delivered as a webview experience inside their app. The same socket architecture was reused to build a second card game for the same client.",
@@ -103,7 +110,7 @@ window.SiteContent.showcase = {
         "Built the real-time game logic and turn/round sync using Socket.IO and native socket calls",
         "Reused the socket architecture to ship a second card game for the same client"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\Tarneeb.jpg",
+      thumbnail: "assets/Showcase/Thumbnails/Tarneeb.jpg",
       links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] }
@@ -112,6 +119,7 @@ window.SiteContent.showcase = {
     {
       status: "shipped",
       title: "Real-Time Poker Platform",
+      dates: "Jul 2020 — Jan 2022",
       stack: "Photon · PlayFab · C#",
       note: "Client freelance project. Currently facing listing issues on Google Play; not live in the store at the moment.",
       description: "A multiplayer poker game built for a freelance client with custom rule variants layered on standard poker: provably fair card distribution, and special per-player abilities like swapping cards post-deal or doubling points on a win.",
@@ -121,7 +129,7 @@ window.SiteContent.showcase = {
         "Integrated AdMob monetization",
         "Worked with a 2D artist to bring vector art into the game via Adobe Illustrator asset extraction"
       ],
-      thumbnail: "assets\\Showcase\\Thumbnails\\KingOfGames.png",
+      thumbnail: "assets/Showcase/Thumbnails/KingOfGames.png",
       links: [],
       mediaGroups: [
         { title: "Gameplay", items: [] }

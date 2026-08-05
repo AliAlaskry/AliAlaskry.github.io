@@ -3,7 +3,7 @@ window.SiteContent.hero = {
   title: "Ali Ahmed Alaskry",
   role: "Senior Unity Developer & Technical Lead",
   pitch: "I build and lead Unity systems for mobile, multiplayer, and XR — from solo freelance builds to running a 11-person production team. Architecture that survives contact with a growing team, not just a demo.",
-  tags: ["Unity", "Multiplayer", "Mobile Optimiztion", "XR/VR", "Architecture", "Technical Leadership"],
+  tags: ["Unity", "Multiplayer", "Mobile Optimization", "XR/VR", "Architecture", "Technical Leadership"],
 
   // Text on the hero button that opens the intro video. Change it to whatever you like —
   // "Who is Ali", "Introduction", "Meet Ali", etc.

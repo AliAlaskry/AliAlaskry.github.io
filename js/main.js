@@ -265,8 +265,11 @@
       media.appendChild(el('span', { class: 'showcase-card__view', text: 'View project →' }));
 
       var body = el('div', { class: 'showcase-card__body' });
+      var metaRow = el('div', { class: 'showcase-card__meta-row' });
       var statusLabel = p.status;
-      body.appendChild(el('span', { class: 'showcase-card__status showcase-card__status--' + p.status, text: statusLabel }));
+      metaRow.appendChild(el('span', { class: 'showcase-card__status showcase-card__status--' + p.status, text: statusLabel }));
+      if (p.dates) metaRow.appendChild(el('span', { class: 'showcase-card__dates', text: p.dates }));
+      body.appendChild(metaRow);
       body.appendChild(el('h3', { class: 'showcase-card__title', text: p.title }));
       body.appendChild(el('p', { class: 'showcase-card__stack', text: p.stack }));
       body.appendChild(el('p', { class: 'showcase-card__note', text: p.note }));
@@ -289,7 +292,7 @@
       card.setAttribute('aria-label', 'View ' + p.title);
       card.addEventListener('click', function () {
         openLightbox({
-          eyebrow: p.stack,
+          eyebrow: p.dates ? (p.stack + ' · ' + p.dates) : p.stack,
           title: p.title,
           description: p.description || p.note,
           showContribution: true,

@@ -84,13 +84,9 @@ window.SiteContent.experience = {
       dates: "Jul 2020 — Jan 2022",
       summary: "Real-time multiplayer card and board games — Photon, PlayFab, session recovery, responsive UI",
       details: [
-        "Built a real-time multiplayer poker platform with fair card dealing and custom special-ability rule variants, using Photon and PlayFab",
-        "Built a three-game multiplayer platform (closed backgammon, backgammon, and 31) with text/voice chat, friends system, daily rewards, and rematch requests",
-        "Engineered session-recovery: auto-reconnect and rejoin-last-room logic backed by PlayFab-stored state",
-        "Built a fully responsive UI system with zero element overlap across screen sizes",
-        "Delivered Ludo and Domino to ~90% completion (paused due to client budget)",
-        "Integrated authentication, IAP, ads (AdMob and others), and localization across Android, iOS, WebGL, and PC",
-        "Collaborated with a second programmer over GitHub on the board-game platform's two-month build phase"
+        "Built two real-time multiplayer platforms on Photon and PlayFab: a poker game with custom rule variants and fair card dealing, and a three-game platform (backgammon, closed backgammon, 31) with chat, friends, and daily rewards",
+        "Engineered session-recovery (auto-reconnect, rejoin-last-room) and a fully responsive UI system with zero element overlap across screen sizes",
+        "Integrated authentication, IAP, ads, and localization across Android, iOS, WebGL, and PC"
       ]
     }
   ]

@@ -51,7 +51,7 @@ window.SiteContent.achievements = {
       value: "Modular systems",
       text: "Migrated a monolithic codebase into tested, modular assemblies",
       context: "Lessonera",
-      description: "Converted the entire game into independent assembly definitions — Localization, PlayerCore, Sync, Network, UIView, WebView and moer — each with its own test and validation coverage.",
+      description: "Converted the entire game into independent assembly definitions — Localization, PlayerCore, Sync, Network, UIView, WebView — each with its own test and validation coverage.",
       steps: [
         "Mapped existing coupling between systems to define clean module boundaries",
         "Extracted each domain into its own assembly definition with an explicit public surface",
