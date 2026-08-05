@@ -4,7 +4,7 @@
 // "current: true" gives it the pulsing orange dot — keep this on exactly one entry.
 window.SiteContent = window.SiteContent || {};
 window.SiteContent.experience = {
-  heading: "Console — work history",
+  heading: "work history",
   hint: "Click a line to expand it.",
   items: [
     {

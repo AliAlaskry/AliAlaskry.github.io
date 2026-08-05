@@ -471,7 +471,7 @@ button.btn { appearance: none; -webkit-appearance: none; cursor: pointer; font: 
 .skills__search:focus { border-color: var(--accent); outline: none; }
 .skills__tabs {
   display: flex; flex-direction: row; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch;
-  padding-bottom: 10px; justify-content: center;
+  padding-bottom: 10px; justify-content: flex-start; 
 }
 .skills__tabs::-webkit-scrollbar { height: 6px; }
 .skills__tabs::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
