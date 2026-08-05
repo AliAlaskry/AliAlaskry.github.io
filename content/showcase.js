@@ -100,7 +100,7 @@ window.SiteContent.showcase = {
       ]
     },
     {
-      status: "status unclear",
+      status: "unclear",
       title: "Tarneeb — Real-Time Card Game",
       dates: "Apr 2025 — Aug 2025",
       stack: "Socket.IO · native socket calls · C#",

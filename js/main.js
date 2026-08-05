@@ -23,6 +23,45 @@
     return VIDEO_EXT.indexOf(ext) !== -1;
   }
 
+  // ---- social preview sync (title, description, OG/Twitter card values) ----
+  // Pushes content/social.js into the live document: tab title + existing <meta>
+  // tags. NOTE: this updates the page for anyone/anything that runs JS, but most
+  // link-preview crawlers (LinkedIn, Slack, Twitter/X, Discord...) read the raw
+  // HTML and never execute JS — so the <meta> tags in index.html's <head> still
+  // need to match this file's values for those previews to be correct. See the
+  // comment at the top of content/social.js.
+  function renderSocialMeta() {
+    var s = C.social;
+    if (!s) return;
+
+    if (s.title) document.title = s.title;
+
+    function setMetaContent(selector, value) {
+      if (!value) return;
+      var node = document.querySelector(selector);
+      if (node) node.setAttribute('content', value);
+    }
+    function setLinkHref(selector, value) {
+      if (!value) return;
+      var node = document.querySelector(selector);
+      if (node) node.setAttribute('href', value);
+    }
+
+    setMetaContent('meta[name="description"]', s.description);
+    setLinkHref('link[rel="canonical"]', s.url);
+
+    setMetaContent('meta[property="og:site_name"]', s.siteName);
+    setMetaContent('meta[property="og:title"]', s.title);
+    setMetaContent('meta[property="og:description"]', s.description);
+    setMetaContent('meta[property="og:url"]', s.url);
+    setMetaContent('meta[property="og:image"]', s.image);
+    setMetaContent('meta[property="og:image:alt"]', s.imageAlt);
+
+    setMetaContent('meta[name="twitter:title"]', s.title);
+    setMetaContent('meta[name="twitter:description"]', s.shortDescription || s.description);
+    setMetaContent('meta[name="twitter:image"]', s.image);
+  }
+
   // ---- theme + motion (theme itself is applied earlier, by config.js) ----
   function applyMotionPrefs() {
     document.documentElement.classList.toggle('no-motion', CFG.animations === false);
@@ -268,8 +307,10 @@
       var metaRow = el('div', { class: 'showcase-card__meta-row' });
       var statusLabel = p.status;
       metaRow.appendChild(el('span', { class: 'showcase-card__status showcase-card__status--' + p.status, text: statusLabel }));
-      if (p.dates) metaRow.appendChild(el('span', { class: 'showcase-card__dates', text: p.dates }));
       body.appendChild(metaRow);
+      // Dates are pinned to the card's top-right corner (see CSS), not inline in the
+      // meta row, so they stay put regardless of status-label length or layout.
+      if (p.dates) card.appendChild(el('span', { class: 'showcase-card__dates', text: p.dates }));
       body.appendChild(el('h3', { class: 'showcase-card__title', text: p.title }));
       body.appendChild(el('p', { class: 'showcase-card__stack', text: p.stack }));
       body.appendChild(el('p', { class: 'showcase-card__note', text: p.note }));
@@ -717,6 +758,7 @@
     items.forEach(function (i) { io.observe(i); });
   }
 
+  renderSocialMeta();
   applyMotionPrefs();
   applyVisibility();
   assignSectionNumbers();
