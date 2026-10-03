@@ -11,6 +11,6 @@ window.SiteContent.contact = {
     { label: "GitHub", url: "https://github.com/AliAlaskry" },
     { label: "LinkedIn", url: "https://linkedin.com/in/ali-alaskry-91b911211" },
     { label: "Email", url: "mailto:ali.alaskry00@gmail.com" },
-    { label: "Résumé", url: "assets/Ali_Alaskry_Senior_Unity_Developer.pdf" }
+    { label: "Résumé", url: "assets/Ali_Alaskry_Senior_Unity_Developer_EN.pdf" }
   ]
 };
